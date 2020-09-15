@@ -1,0 +1,178 @@
+*{
+
+margin: 0px;
+padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+font-size: 20px;
+overflow-x: hidden;
+color: #fff;
+font-family: 'Montserrat', sans-serif;
+}
+
+header{
+background-image:linear-gradient(rgb(0,0,0,0.2),rgba(0,0,0,0.2)), url('../images/background.jpg');
+background-size: cover;
+height:100vh;
+background-repeat: no-repeat;
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.row{
+max-width: 1180px;
+margin: 0 auto;
+}
+.logo{
+  height:60px;
+  width:auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav{
+  float: right;
+  margin-top: 60px;
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+
+}
+
+.main-nav li a{
+  padding: 5px 0;
+  color:#fff;
+  text-decoration: none;
+text-transform: uppercase;
+font-size: 80%;
+font-weight: 100px;
+}
+
+.main-nav li a:hover{
+  border-bottom: 2px solid #FF883C ;
+}
+
+.main-content{
+  width:1180px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+h1{
+  color:#fff;
+  font-size: 215%;
+  word-spacing: 3.5px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-transform:uppercase;
+  font-weight: lighter;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s,border 0.2s;color: 0.2s;
+}
+
+.btn1{
+  background-color: transparent;
+  color: #FF883C;
+  margin-right: 15px;
+  border: 1px solid #FF883C;
+}
+.btn1:hover{
+  background-color: #FF883C;
+  color: #fff;
+
+}
+
+.btn2{
+  border-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+
+}
+
+.btn2:hover{
+  background-color: #fff;
+  color:black;
+}
+.mobicon{display: none;}
+
+@media only screen and (max-width: 1180px){
+  .main-content{
+    width: 100%;
+    padding:0 2%;
+  }
+
+
+}
+@media only screen and (max-width: 990px){
+  h1{font-size: 195%;}
+}
+@media only screen and (max-width: 785px){
+  h1{font-size: 175%;}
+  .main-nav{display: none;}
+  .mobicon{
+    display:inline-block;
+    color:#fff;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .main-nav{float:left;}
+  .main-nav li{
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 480px){
+  .btn1{
+    margin-bottom: 20px;
+  }
+  h1{font-size: 155%;}
+}
+.input{
+  width: 300px;
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 300px;
+  padding: 10px;
+  color: #ff944d;
+}
+.form{
+  width:1180px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 45px;
+}
+.btn3{
+  border-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 30px;
+}
+.btn3:hover{
+  background-color: #fff;
+  color:black;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>UnivCode</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+<nav>
+  <div class="row clearfix">
+<img src="images/logo.png" class="logo" alt="icon">
+<ul class="main-nav slideInDown"  id="check-class">
+  <li><a href="#">Courses</a></li>
+  <li><a href="#">Tests</a></li>
+  <li><a href="#">Mentors</a></li>
+  <li><a href="login.html">Login</a></li>
+
+</ul>
+<a href="#" class="mobicon"  onclick="slideshow()"><i class="fas fa-bars"></i></a>
+  </div>
+</nav>
+<div class="main-content">
+<h1>Welcome To <span>UnivCode</span>.
+  <br>Dive into the world of<br> programming.
+</h1>
+<a href="#" class="btn btn1">See Courses</a>
+<a href="signup.html" class="btn btn2">Sign up</a>
+
+</div>
+</header>
+<script >
+function slideshow(){
+  var x= document.getElementById('check-class');
+  if(x.style.display === "none"){
+    x.style.display ="block";
+  }else{
+    x.style.display ="none";
+  }
+
+}
+</script>
+
+
+  </body>
+
+</html>
